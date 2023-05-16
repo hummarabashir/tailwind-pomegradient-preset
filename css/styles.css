@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toasted-container.top-right {
+  top: 10%;
+  right: 7%;
+}
+.toasted-container,
+.toasted-container.full-width {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.toasted-container {
+  position: fixed;
+  z-index: 10000;
+}
+.notification {
+  color: #ffffff;
+  border: 2px solid rgb(197, 50, 74);
+  padding: 1em;
+}
+.none {
+  display: none;
+}
+.top-16 {
+  top: 15.5rem;
+}
